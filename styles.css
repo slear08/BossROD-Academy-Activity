@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400;800&family=Poppins:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* utilities */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+ul{ 
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+section{
+    height: 100%;
+    padding: 0 5rem 0 5rem;
+    margin-bottom: 5rem;
+}
+.split{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* NAVBAR */
+nav{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav .logo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 6rem;
+    transform: rotate(-45deg);
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+nav .logo .box1{
+    background-color: rgb(185, 185, 185);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 15%;
+}
+nav .logo .box2{
+    background-color: rgb(0, 0, 0);
+    border-radius: 15%;
+    height: 2rem;
+    width: 2rem;
+}
+nav .logo .box3{
+    background-color: rgb(119, 118, 118);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 15%;
+}
+nav .logo .box4{
+    background-color: rgb(65, 65, 65);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 15%;
+}
+nav h1{
+    flex-grow: 1;
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    font-size: 1.2rem;
+}
+
+
+/* FIRST SECTION */
+.first-section{
+    height: calc(100%-168px);
+}
+section .hero{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .hero-details{
+    width: 60%;
+}
+
+section .hero .image-container{
+    margin-bottom: 1rem;
+}
+section .hero h3{
+    font-size: 2rem;
+}
+section .hero .image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+section .hero-details h1{
+    font-size: 4rem;
+}
+section .hero-details .sub-title{
+    font-size: 2.5rem;
+}
+section .hero-details .circle-holder{
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 2.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+section .hero-details .circle-holder > a{
+    padding: 4rem 4rem;
+    flex: 0 0 185px;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+}
+section .hero-details .circle-holder .my-resume{
+    background: rgba(220, 110, 110, 1);
+}
+section .hero-details .circle-holder .my-works{
+    background: rgba(106, 193, 212, 1);
+}
+section .hero-details .circle-holder .my-skills{
+    background: rgba(201, 107, 217, 1);
+}
+section .hero-details p{
+    font-size: 1.2rem;
+}
+
+/* SECOND SECTION */
+section .contact-details{
+    width: 40%;
+}
+section .contact-form{
+    width: 60%;
+}
+section .contact-details h1{
+    font-size: 3rem;
+}
+section .contact-details .sub-title{
+    font-size: 1.5rem;
+}
+section .contact-details .info-main .info-item{
+    margin: 3rem 1rem 3rem 0;
+}
+section .contact-details .info-main .info-item h3{
+    font-size: 1.5rem;
+}
+section .contact-details .info-main .info-item .info-details {
+    display: inline-block;
+}
+section .contact-details .info-main .info-item img{
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    width: 100%;
+    padding: 4rem 5rem;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 900px) {
+
+    nav ul{
+        margin-top: 2rem;
+     }
+    section h1,h3,p{
+        text-align: center;
+    }
+    section .hero{
+        width: 100%;
+    }
+    section .hero-details{
+        width: 100%;
+    }
+    section .contact-details{
+        width: 100%;
+    }
+    section .contact-form{
+        width: 100%;
+    }
+}
+@media (max-width: 700px){
+    nav{
+        justify-content: center;
+        align-items: center; 
+    }
+    nav h1{
+        text-align: center;
+        flex-grow:0;
+    }
+    nav ul {
+        display: none;
+    }
+    section .contact-details .info-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   
+  
+}
